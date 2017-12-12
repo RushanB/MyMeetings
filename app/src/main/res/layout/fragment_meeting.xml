@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/Black">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Black">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/close"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="16dp"
+                android:src="@android:drawable/arrow_up_float"
+                android:background="@android:color/transparent"
+                android:tint="@android:color/white"
+                />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:background="@android:color/transparent"
+                android:text="Save"
+                android:textStyle="bold"
+                android:paddingLeft="12dp"
+                android:paddingRight="16dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/white" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/editTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@null"
+                android:lines="2"
+                android:hint="Enter Title"
+                android:padding="16dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/Grey"
+                android:textSize="26sp" />
+
+
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:id="@+id/startDate"
+                    android:padding="16dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/Grey"
+                    android:text="Start Date"
+                    android:textSize="18sp"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:id="@+id/startTime"
+                    android:padding="16dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/Grey"
+                    android:text="Start Time"
+                    android:textSize="18sp"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/endDate"
+                android:layout_weight="1"
+                android:padding="16dp"
+                android:background="@android:color/transparent"
+                android:textColor="@color/Grey"
+                android:textSize="18sp"
+                android:text="End Date"
+                android:textAllCaps="false"
+                android:gravity="left|center_vertical"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:id="@+id/endTime"
+                android:padding="16dp"
+                android:background="@android:color/transparent"
+                android:textColor="@color/Grey"
+                android:text="Start Time"
+                android:textSize="18sp"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/contactList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/addContact"
+                android:background="@android:color/transparent"
+                android:text="ADD CONTACT"
+                android:textColor="@color/Grey"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="16dp"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editNote"
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:padding="16dp"
+                android:textColorHint="@android:color/darker_gray"
+                android:hint="Enter a Note"
+                android:inputType="textCapSentences|textMultiLine"
+                />
+
+
+        </LinearLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
